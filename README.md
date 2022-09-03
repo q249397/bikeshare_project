@@ -8,6 +8,7 @@ Explore US Bikeshare data.
 
 ### Description
 Program created with python to query bikeshare data from the US.
+Filter options: City, Month, Day
 
 ### Files used
 bikeshare.py, chicago.csv, new_york_city.csv, Washington.csv.
