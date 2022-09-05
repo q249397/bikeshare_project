@@ -89,16 +89,16 @@ def time_stats(df):
 
     # TO DO: display the most common month
     months = ['january', 'february', 'march', 'april', 'may', 'june']
-    common_month = df['Month'].mode()[0]
-    print('\n{} is the most common month.'.format(months[common_month -1].title()))
+    commonMonth = df['Month'].mode()[0]
+    print('\n{} is the most common month.'.format(months[commonMonth -1].title()))
 
     # TO DO: display the most common day of week
     days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-    common_day = df['day'].mode()[0]
-    print('\n{} is the most common day.'.format(days[common_day -1].title()))
+    commonDay = df['day'].mode()[0]
+    print('\n{} is the most common day.'.format(days[commonDay -1].title()))
     # TO DO: display the most common start hour
-    common_hour = df['Start Hour'].mode()[0]
-    print('\n{}:00 is the most common hour.'.format(common_hour))
+    commonHour = df['Start Hour'].mode()[0]
+    print('\n{}:00 is the most common hour.'.format(commonHour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
@@ -133,14 +133,14 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    trip_dur_sum = df['Trip Duration'].sum()/3600
-    trip_dur_sum = np.round(trip_dur_sum, 1)
-    print('\n{} hour(s) is the total of Trip Duration.'.format(trip_dur_sum))
+    tripDurSum = df['Trip Duration'].sum()/3600
+    tripDurSum = np.round(tripDurSum, 1)
+    print('\n{} hour(s) is the total of Trip Duration.'.format(tripDurSum))
 
     # TO DO: display mean travel time
-    trip_dur_mean = df['Trip Duration'].mean()/60
-    trip_dur_mean = np.round(trip_dur_mean, 1)
-    print('\n{} minute(s) is the mean of Trip Duration.'.format(trip_dur_mean))
+    tripDurMean = df['Trip Duration'].mean()/60
+    tripDurMean = np.round(tripDurMean, 1)
+    print('\n{} minute(s) is the mean of Trip Duration.'.format(tripDurMean))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
